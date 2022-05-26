@@ -9,7 +9,7 @@ import javax.servlet.http.*;
 
 import com.camp24.controller.*;
 import com.camp24.dao.*;
-import com.camp24.dao.kimhe.FqaDao;
+import com.camp24.dao.kimhe.FaqDao;
 import com.camp24.vo.*;
 /**
  * 이 클래스는 게시글 상세보기 요청을 처리하는 클래스
@@ -23,11 +23,11 @@ import com.camp24.vo.*;
  * 										클래스제작
  *
  */
-public class FqaDetail implements CmpInter {
+public class FaqDetail implements CmpInter {
 
 	@Override
 	public String exec(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String view = "/board/fqaDetail";
+		String view = "/board/faqDetail";
 		
 		String spage = req.getParameter("nowPage");
 		String sno = req.getParameter("bno");
@@ -36,7 +36,7 @@ public class FqaDetail implements CmpInter {
 			bno = Integer.parseInt(sno);
 		}
 		
-		FqaDao bDao = new FqaDao();
+		FaqDao bDao = new FaqDao();
 		BoardVO bVO = bDao.getBoardDetail(bno);
 		
 		System.out.println("********** cont list.size() : " + bVO.getList().size());

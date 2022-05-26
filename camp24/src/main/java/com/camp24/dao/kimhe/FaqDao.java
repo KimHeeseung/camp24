@@ -7,21 +7,21 @@ import java.util.Date;
 
 import com.camp24.db.*;
 import com.camp24.sql.*;
-import com.camp24.sql.kimhe.FqaSQL;
+import com.camp24.sql.kimhe.FaqSQL;
 import com.camp24.util.*;
 import com.camp24.vo.*;
 
-public class FqaDao {
+public class FaqDao {
 	private CmpDBCP db;
 	private Connection con;
 	private Statement stmt;
 	private PreparedStatement pstmt;
 	private ResultSet rs;
-	private FqaSQL bSQL;
+	private FaqSQL bSQL;
 	
-	public FqaDao() {
+	public FaqDao() {
 		db = new CmpDBCP();
-		bSQL = new FqaSQL();
+		bSQL = new FaqSQL();
 	}
 	
 	// 단일 파일 정보 데이터베이스 입력 전담 처리함수

@@ -9,11 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.camp24.controller.*;
 
-public class FqaWrite implements CmpInter {
+public class FaqWrite implements CmpInter {
 
 	@Override
 	public String exec(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String view = "/board/fqaWrite";
+		String view = "/board/faqWrite";
 		return view;
 	}
 

@@ -1,6 +1,6 @@
 package com.camp24.sql.kimhe;
 
-public class FqaSQL {
+public class FaqSQL {
 	public final int SEL_BOARD_LIST			=	1001;
 	public final int SEL_TOTAL_COUNT		=	1002;
 	public final int SEL_BOARD_DETAIL		=	1003;

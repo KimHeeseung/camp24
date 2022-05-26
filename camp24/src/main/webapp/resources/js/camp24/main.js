@@ -20,4 +20,7 @@
 	$('#ibtn').click(function(){
 		$(location).attr('href', '/camp24/member/myInfo.cmp');
 	});
+	$('#faqbtn').click(function(){
+		$(location).attr('href', '/camp24/board/faqList.cmp');
+	});
 });

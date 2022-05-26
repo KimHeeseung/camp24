@@ -32,11 +32,11 @@ $(document).ready(function(){
 	});
 	
 	$('#wbtn').click(function(){
-		$('#pageFrm').attr('action', '/camp24/board/boardWrite.cmp');
+		$('#pageFrm').attr('action', '/camp24/board/faqWrite.cmp');
 		$('#pageFrm').submit();
 	});
 		$('#listbtn').click(function(){
-		$(location).attr('href', '/camp24/board/boardlist.cmp');
+		$(location).attr('href', '/camp24/board/faqlist.cmp');
 		$('#pageFrm').submit();
 	});
 	

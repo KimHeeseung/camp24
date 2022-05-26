@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>FQA 게시판</title>
+<title>faq 게시판</title>
 <link rel="stylesheet" type="text/css" href="/camp24/resources/css/w3.css">
 <link rel="stylesheet" type="text/css" href="/camp24/resources/css/user.css">
 <script type="text/javascript" src="/camp24/resources/js/jquery-3.6.0.min.js"></script>
@@ -33,8 +33,8 @@ and is wrapped around the whole page content, except for the footer in this exam
   <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
 </header>
 
-	<div class="w3-content mxw700">
-		<h1 class="w3-dark-gray w3-padding w3-center w3-card-4">FAQ</h1>
+	<div class="w3-content mxw700 ">
+		<h1 class="w3-light-gray w3-padding w3-left">FAQ</h1>
 		<div class="w3-col w3-card-4 frmpadding">
 			<div class="w3-col w3-margin-top w3-margin-bottom">
 				<label class="w3-col s2">제목 : </label>
@@ -50,7 +50,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 			<div class="w3-button w3-gray w3-margin-top" id="listbtn">목록</div>
 	</div>
 	
-	<form method="POST" action="/camp24/board/fqaList.cmp" id="pageFrm" name="pageFrm">
+	<form method="POST" action="/camp24/board/faqList.cmp" id="pageFrm" name="pageFrm">
 		<input type="hidden" name="nowPage" value="${param.nowPage}">
 	</form>
 </body>

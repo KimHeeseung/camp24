@@ -31,19 +31,26 @@
 </script>
 </head>
 <body class="w3-light-grey">
-	<form method="POST" action="/camp24/board/fqaDetail.cmp" id="frm" name="frm">
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b><a href="/camp24/main.cmp">Main Sample</a></b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">unknown</span></p>
+</header>
+
+
+
+	<form method="POST" action="/camp24/board/faqDetail.cmp" id="frm" name="frm">
 		<input type="hidden" name="nowPage" value="${PAGE.nowPage}">
 		<input type="hidden" name="bno" >
 	</form>
 	<div class="w3-content mxw700">
 		<!-- 페이지 헤더 -->
-		<header class="w3-col w3-card-4 mgb20">
-			<h1 class="w3-gray w3-center w3-padding w3-card-4 mg0">FQA</h1>
+		<header class="w3-col mgb20">
+			<h1 class="w3-left gmg0">FAQ</h1>
 			</nav>
 		</header>
 		
-		<div class="w3-col w3-white w3-card-4 w3-round-large pd15">
-			<div class="w3-col w3-light-grey w3-center w3-border">
+		<div class="w3-col w3-white pd100">
+			<div class="w3-col w3-dark-grey w3-center w3-border">
 				<div class="w3-col m3">
 					<div class="w3-col m7 w3-border-right">글번호</div>
 				</div>
@@ -89,7 +96,7 @@
 			</div>
 		</div>
 		<!-- 페이지 처리 태그 끝 -->
-		<form method="POST" action="/camp24/board/fqaList.cmp" id="pageFrm" name="pageFrm">
+		<form method="POST" action="/camp24/board/faqList.cmp" id="pageFrm" name="pageFrm">
 			<input type="hidden" name="nowPage" id="nowPage" value="${PAGE.nowPage}">
 		</form>
 	</div>
